@@ -25,8 +25,8 @@
                     aria-expanded="false">Профиль</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{% url 'main:profile' %}">Мои объявления</a>
-                        <a class="dropdown-item" href="#">Изменить свои данные</a>
-                        <a class="dropdown-item" href="#">Изменить пароль</a>
+                        <a class="dropdown-item" href="{% url 'main:change_user_info' %}">Изменить свои данные</a>
+                        <a class="dropdown-item" href="% url 'main:password_change' %}">Изменить пароль</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{% url 'main:logout' %}">Выйти</a>
                         <div class="dropdown-divider"></div>
