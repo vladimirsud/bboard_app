@@ -12,6 +12,7 @@ urlpatterns = [
     path('accounts/register/done/', RegisterDoneView.as_view(), name='register_done'),
     path('accounts/register/', RegisterUserView.as_view(), name='register'),
     path('accounts/login/', BBLoginView.as_view(), name='login'),
+    path('<int:pk>/', by_rubric, name='by_rubric'),
     path('<str:page>/', other_page, name="other"),
     path('', index, name="index"),
 ]
